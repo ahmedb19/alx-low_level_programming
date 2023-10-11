@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	unsigned long f1 = 0, f2 = 0, s;
+	unsigned long f1 = 0, f2 = 1, s;
 	float ts;
 
 	while (1)
