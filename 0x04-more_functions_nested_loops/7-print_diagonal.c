@@ -4,6 +4,7 @@
  *print_diagonal - print a diagonal line
  *@n: number of lines
  */
+
 void print_diagonal(int n)
 {
 	int a, s;
