@@ -11,7 +11,7 @@ void _puts(char *str)
 
 	while (*str != '\0')
 	{
-		for (i = 0; i < *str; i++)
+		for (i = 0; i < str; i++)
 			_putchar(str[i]);
 		_putchar('\n');
 	}
