@@ -27,14 +27,14 @@ void print_rev(char *s)
 {
 	int i;
 	int length = _strlen(s);
-	char rev; 
+	char rev;
 
 	for (i = 0; i < (length / 2); i++)
 	{
 		rev = s[i];
 		s[i] = s[length - i - 1];
 		s[length - i - 1] = rev;
-		_putchar(s[i]);
+		_putchar(rev);
 	}
 	_putchar('\n');
 }
