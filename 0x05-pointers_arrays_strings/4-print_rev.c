@@ -10,6 +10,7 @@
 int _strlen(char *s)
 {
 	int count;
+
 	for (count = 0; *s != '\0'; s++)
 		count++;
 
@@ -24,13 +25,16 @@ int _strlen(char *s)
 
 void print_rev(char *s)
 {
-	int i, rev = 0;
+	int i;
 	int length = _strlen(s);
+	char rev; 
 
 	for (i = 0; i < (length / 2); i++)
 	{
 		rev = s[i];
 		s[i] = s[length - i - 1];
 		s[length - i - 1] = rev;
+		_putchar(s[i]);
 	}
+	_putchar('\n');
 }
