@@ -24,7 +24,7 @@ char *cap_string(char *c)
 		{
 			for (j = 0; j <= 12; j++)
 			{
-				if (a[j] == c[i - 1])
+				if (ar[j] == c[i - 1])
 				{
 					c[i] = c[i] - 32;
 				}
