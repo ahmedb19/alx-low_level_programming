@@ -4,7 +4,7 @@
  *string_toupper - Changes all lowercase letters of a string to uppercase.
  *@c: Pointer to a string
  *
- *Return: 0
+ *Return: Pointer to a string
  */
 char *string_toupper(char *c)
 {
