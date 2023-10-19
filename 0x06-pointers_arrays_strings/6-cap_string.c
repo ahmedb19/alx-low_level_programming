@@ -20,15 +20,15 @@ char *cap_string(char *c)
 			{
 				c[i] = c[i] - 32;
 			}
-		} else
-		{
-			for (j = 0; j <= 12; j++)
+			else
 			{
-				if (ar[j] == c[i - 1])
-				{
-					c[i] = c[i] - 32;
+				for (j = 0; j <= 12; j++)
+				{	
+					if (ar[j] == c[i - 1])
+					{
+						c[i] = c[i] - 32;
+					}
 				}
-			}
 		}
 		i++;
 	}
