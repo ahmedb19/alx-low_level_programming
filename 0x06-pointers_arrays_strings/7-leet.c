@@ -2,7 +2,7 @@
 
 /**
  *leet - encodes a string into 1337
- *@a: syring to be encoded
+ *@a: string to be encoded
  *
  *Return: Encoded string
  */
@@ -17,7 +17,7 @@ char *leet(char *a)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (a[j] == s1[j])
+			if (a[i] == s1[j])
 			{
 				a[i] = s2[j];
 			}
