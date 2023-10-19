@@ -4,6 +4,7 @@
  *_strncpy - copies a string
  *@dest: 1st string
  *@src: 2nd string
+ *@n: Number of bytes
  *
  *Return: pointer to dest
  */
