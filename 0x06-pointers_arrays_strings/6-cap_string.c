@@ -13,7 +13,7 @@ char *cap_string(char *c)
 	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] >= 'A' && c[i] <= 'Z')
-			c[i] = c[i] + 32;
+			c[i] = c[i] - 32;
 	}
 
 	return (c);
