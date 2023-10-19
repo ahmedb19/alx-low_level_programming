@@ -19,5 +19,5 @@ char *string_toupper(char *c)
 	}
 	c[i] = '\0';
 
-	return (0);
+	return (c);
 }
