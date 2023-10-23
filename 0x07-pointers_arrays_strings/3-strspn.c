@@ -13,8 +13,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
-	size_t sa = 0;
+	int i, j;
+	unsigned int sa = 0;
 	bool match = false;
 
 	for (i = 0; s[i] != '\0'; i++)
