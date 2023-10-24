@@ -23,10 +23,10 @@ char *_strstr(char *haystack, char *needle)
 			{
 				break;
 			}
-			if (needle[j - i] == '\0')
-			{
-				return (haystack + i);
-			}
+		}
+		if (needle[j - i] == '\0')
+		{
+			return (haystack + i);
 		}
 	}
 
