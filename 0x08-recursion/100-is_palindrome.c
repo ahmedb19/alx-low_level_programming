@@ -26,16 +26,35 @@ int _strlen_recursion(char *g)
 
 int is_palindrome(char *s)
 {
-	int i = 0;
 	int len = _strlen_recursion(s);
 
-	if (i >= len - 1)
-		return (1);
-	else if (s[i] == s[len - 1])
+	if (len == 0 || len == 1)
 	{
-		i += i;
-		len -= 1;
-		return (is_palindrome(s));
+		return (1);
+	}
+
+	return (check_pal(s, 0, len - 1));
+}
+
+/**
+ *check_pal - checks to see if a string is palindrome
+ *@str: String
+ *@a: Starting index
+ *@b: Ending index
+ *
+ *Return: 1 if the string is palindrome otherwise 0
+ */
+
+int check_pal(char *str, int a, int b);
+
+int check_pal(char *str, int a, int b)
+{
+	if (a >= b)
+	{
+		return (1);
+	} else if (str[a] == str[b])
+	{
+		return (check_pal(str, a + 1, b - 1));
 	} else
 		return (0);
 }
