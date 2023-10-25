@@ -31,5 +31,5 @@ int optimus_prime(int n, int m)
 
 int is_prime_number(int n)
 {
-	return (optimus_prime(n, 1));
+	return (optimus_prime(n, 2));
 }
