@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *sqr - finds the square root of a number
+ *_sqr - finds the square root of a number
  *@val: Integer
  *@n: Given Value
  *
