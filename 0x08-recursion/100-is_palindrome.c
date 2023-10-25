@@ -35,6 +35,6 @@ int is_palindrome(char *s)
 	{
 		i += i;
 		len -= 1;
-		return (int is_palindrome(char *s));
+		return (is_palindrome(s));
 	}
 }
