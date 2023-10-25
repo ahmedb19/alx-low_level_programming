@@ -45,8 +45,6 @@ int is_palindrome(char *s)
  *Return: 1 if the string is palindrome otherwise 0
  */
 
-int check_pal(char *str, int a, int b);
-
 int check_pal(char *str, int a, int b)
 {
 	if (a >= b)
