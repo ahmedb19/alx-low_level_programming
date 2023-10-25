@@ -10,15 +10,6 @@
 
 int _sqr(int val, int n);
 
-/**
- *_sqrt_recursion - returns the natural square root of a number.
- *@n: Given number
- *
- *Return: -1 if n doesn't have a square root
- */
-
-
-
 int _sqr(int val, int n)
 {
 	if (val * val == n)
@@ -30,6 +21,13 @@ int _sqr(int val, int n)
 	} else
 		return (-1);
 }
+
+/**
+*_sqrt_recursion - returns the natural square root of a number.
+*@n: Given number
+*
+*Return: -1 if n doesn't have a square root
+*/
 
 int _sqrt_recursion(int n)
 {
