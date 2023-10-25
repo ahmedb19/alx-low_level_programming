@@ -21,8 +21,6 @@ int _sqr(int val, int n);
 
 int _sqr(int val, int n)
 {
-	int val = 1;
-
 	if (val * val == n)
 	{
 		return (val);
