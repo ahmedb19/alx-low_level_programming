@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int i, j, a = 0;
 
 	if (argc == 1)
 	{
@@ -25,9 +25,10 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			j += atoi(argv[argc]);
+			j = atoi(argv[i]);
+			a += j;
 		}
-		printf("%d\n", j);
+		printf("%d\n", a);
 	}
 
 	return (0);
