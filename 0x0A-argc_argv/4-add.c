@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int i = 0, j = atoi(argv[i]);
 
 	if (argc == 1)
 	{
@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		j += atoi(argv[i]);
-		printf("%d\n", j);
+		j = atoi(argv[i]) + j;
 	}
+	printf("%d\n", j);
 
 	return (0);
 }
