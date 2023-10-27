@@ -1,5 +1,4 @@
-#include <stdio.h>
-#define UNUSED(argc) (void)(argc)
+#include "main.h"
 
 /**
  *main - prints its name, followed by a new line.

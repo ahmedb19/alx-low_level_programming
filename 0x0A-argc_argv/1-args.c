@@ -1,5 +1,4 @@
-#include <stdio.h>
-#define UNUSED(argv) (void)(argv)
+#include "main.h"
 
 /**
  *main - prints the number of arguments passed into it.
