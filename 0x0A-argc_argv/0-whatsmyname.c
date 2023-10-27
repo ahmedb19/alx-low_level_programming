@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define UNUSED(argc) (void)(argc)
+
 /**
  *main - prints its name, followed by a new line.
  *@argc: Argument count
