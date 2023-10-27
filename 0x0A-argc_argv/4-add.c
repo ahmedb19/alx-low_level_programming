@@ -11,29 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, a = 0;
+	int i = 0;
 	char *c;
 
-	if (argc == 1)
+	while (--argc)
 	{
-		printf("0\n");
-	} else
-	{
-		for (i = 1; i < argc; i++)
+		for (c = argv[argc]; *c; c++)
 		{
-			for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
 			{
-				if (*c < '0' || *c > '9')
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			j = atoi(argv[i]);
-			a += j;
 		}
-		printf("%d\n", a);
+		i += atoi(argv[argc]);
 	}
+	printf("%d\n", i);
 
 	return (0);
 }
