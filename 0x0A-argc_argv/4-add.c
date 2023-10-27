@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j, a = 0;
+	char *c;
 
 	if (argc == 1)
 	{
@@ -20,11 +21,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= 'a' || *argv[i] <= 'z')
+			for (c = argv[argc]; *c; c++)
 			{
-				printf("Error\n");
-				return (1);
-			}
+				if (*c < '0' || *c > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
 			j = atoi(argv[i]);
 			a += j;
 		}
