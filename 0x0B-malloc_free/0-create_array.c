@@ -18,7 +18,13 @@ char *create_array(unsigned int size, char c)
 		a[i] = c;
 
 	if (size == 0 || a == 0)
+	{
 		return (0);
+	} else
+	{
+		for (i = 0; i < size; i++)
+			a[i] = c;
+	}
 
 	return (a);
 }
