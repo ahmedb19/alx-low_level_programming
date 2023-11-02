@@ -4,6 +4,7 @@
  *_memset - fills memory with a constant byte
  *@s: Pointer to a string
  *@b: constant byte
+ *@n: Number of bytes
  *
  *Return: Pointer
  */
@@ -28,7 +29,6 @@ char *_memset(char *s, char b, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
-
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
