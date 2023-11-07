@@ -1,5 +1,5 @@
-#ifndef _DOG_H
-#define _DOH_H
+#ifndef DOG_H
+#define DOH_H
 
 /**
  *struct dog - A dog's struct
@@ -9,10 +9,9 @@
  *
  */
 
-
 struct dog
 {
-	char * name;
+	char *name;
 	float age;
 	char *owner;
 };
