@@ -5,7 +5,7 @@
  *@a: First int
  *@b: Second int
  *
- *Return: The sum 
+ *Return: The sum
  */
 
 int op_add(int a, int b)
