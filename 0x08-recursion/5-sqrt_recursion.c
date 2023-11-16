@@ -22,5 +22,5 @@ int test(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-	return (test(n, 1);
+	return (test(n, 1));
 }
