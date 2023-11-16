@@ -9,8 +9,14 @@
  */
 int test(int n, int i)
 {
-	if (i * i != n)
-		return (test(n, i + 1));
+	if (i * i <= n)
+	{
+		if (i * i == n)
+			return (i);
+		else
+			i++;
+	}
+	return (test(n, i));
 }
 
 /**
