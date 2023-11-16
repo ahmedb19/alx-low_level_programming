@@ -9,8 +9,6 @@
  */
 int prime_ch(int n, int x)
 {
-	if (n == 2)
-		return (1);
 	else if (n % x == 0)
 		return (0);
 	else if (x >= n / 2)
@@ -30,6 +28,8 @@ int is_prime_number(int n)
 {
 	if (n < 0)
 		return (0);
+	else if (n == 2)
+		return (1);
 	else
 		return (prime_ch(n, 1));
 }
