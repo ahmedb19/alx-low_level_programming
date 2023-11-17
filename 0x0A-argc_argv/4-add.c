@@ -19,12 +19,12 @@ int main(int argc, char *argv[])
 	{
 		for (a = argv[argc]; *a; a++)
 		{
-			if (*a < '0' && *a > '9')
+			if (*a < '0' || *a > '9')
 			{
 				printf("Error\n");
 				return (1);
-			} else
 				s += atoi(argv[argc]);
+			}
 		}
 	}
 	printf("%d\n", s);
