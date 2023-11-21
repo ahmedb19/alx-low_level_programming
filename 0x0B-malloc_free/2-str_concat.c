@@ -5,7 +5,8 @@
  *@s1: 1st string
  *@s2: string to be concatenated
  *
- *Return: NULL on failure, Otherwise a Pointer to a newly allocated space in memory.
+ *Return: NULL on failure, Otherwise a Pointer to a
+ *newly allocated space in memory.
  */
 
 char *str_concat(char *s1, char *s2)
@@ -28,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		for (j = i; s2[j] != '\0'; j++)
 			ptr[j] = s2[j];
 	}
-	ptr[j + 1] = '\0';
+	ptr[j] = '\0';
 
 	return (ptr);
 }
