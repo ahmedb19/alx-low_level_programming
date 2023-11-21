@@ -10,9 +10,11 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *ptr = char ar[malloc(size)];
+	char *ptr;
 
-	a[0] = c;
+	ptr = malloc(sizeof(size));
 
-	return (0);
+	ptr[0] = c;
+
+	return (ptr);
 }
