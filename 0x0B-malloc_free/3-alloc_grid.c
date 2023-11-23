@@ -23,10 +23,10 @@ int **alloc_grid(int width, int height)
 			return (0);
 		for (s1 = 0; s1 < width; s1++)
 		{
-			ptr[s1][0] = {0, 0};
+			ptr[s1][0] = {{0}, {0}};
 			for (s2 = 0; s2 < height; s2++)
 			{
-				ptr[0][s2] = {0, 0};
+				ptr[0][s2] = {{0}, {0}};
 			}
 		}
 	}
