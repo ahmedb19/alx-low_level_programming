@@ -14,8 +14,7 @@ int s_root(int n, int i)
 	{
 		s_root(n, i + 1);
 	}
-	else
-		return (i);
+	return (i);
 }
 
 /**
