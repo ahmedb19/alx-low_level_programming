@@ -13,8 +13,8 @@ int s_root(int n, int i)
 	if (i * i < n)
 	{
 		s_root(n, i + 1);
+		return (i);
 	}
-	return (i);
 }
 
 /**
