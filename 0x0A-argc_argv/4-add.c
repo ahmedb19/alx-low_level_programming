@@ -19,12 +19,6 @@ int main(int argc, char *argv[])
 
 		if (argc < 0)
 			printf("0\n");
-		else if (atoi(argv[i]) >= 'a' && atoi(argv[i] <= 'z'))
-		{
-			printf("Error\n");
-			return (0);
-		}
-
 	}
 	printf("%d\n", sum);
 
