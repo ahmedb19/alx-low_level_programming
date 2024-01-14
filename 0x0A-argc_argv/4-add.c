@@ -10,23 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, res;
+	int res = 0;
+	char *s;
 
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-
-	if (argc <= 1)
-		printf("0\n");
-	else if ((a >= 'a' && a <= 'z') || (b >= 'a' && b <= 'z'))
+	while (--argc)
 	{
-		printf("Error\n");
-		return (1);
+		for (s = argv[argc]; *s; s++)
+		if (s < '0' || s > '9')
+			return (printf("Error\n"), 1);
+		res += atoi(argv[argc]);
 	}
-	else
-	{
-		res = a + b;
-		printf("%d\n", res);
-	}
-
+	printf("%d\n", res);
 	return (0);
 }
