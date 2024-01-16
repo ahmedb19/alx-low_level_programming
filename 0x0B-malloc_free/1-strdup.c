@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i, j;
+	int i, j;
 	char *s;
 
 	if (str == NULL)
@@ -25,14 +25,17 @@ char *_strdup(char *str)
 
 		if (s)
 		{
-			for (i = 0; s[i] != '\0'; i++)
+			while (str[i] != '\0')
+			{
 				s[i] = str[i];
+				i++;
+			}
 		}
 		else
 		{
 			return ('\0');
 		}
-		s[i + 1] = '\0';
+		s[i] = '\0';
 		return (s);
 	}
 }
