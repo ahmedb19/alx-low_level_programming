@@ -9,18 +9,17 @@
 
 char *_strdup(char *str)
 {
-	if (str == '\0')
+	char *s = (malloc(sizeof(str)));
+	unsigned int i;
+
+	if (*str == '\0')
 	{
 		return ('\0');
 	}
 	else
 	{
-		char *s = (malloc(sizeof(str)));
-
 		if (s)
 		{
-			unsigned int i;
-
 			for (i = 0; str[i] != '\0'; i++)
 				s[i] = str[i];
 		}
