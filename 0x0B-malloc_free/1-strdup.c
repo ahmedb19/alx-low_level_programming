@@ -24,12 +24,12 @@ char *_strdup(char *str)
 		{
 			for (i = 0; str[i] != '\0'; i++)
 				s[i] = str[i];
-			return (s);
 		}
 		else
 		{
 			return ('\0');
 		}
-		s[i] = '\0';
+		s[i + 1] = '\0';
+		return (s);
 	}
 }
