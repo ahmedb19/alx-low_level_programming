@@ -4,7 +4,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct dog {
+/**
+ *dog - struct
+ *@name: Name of the dog
+ *@age: Age of the dog
+ *@owner: Owner of the dog
+ */
+
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
