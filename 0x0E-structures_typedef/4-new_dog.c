@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- *_strcopy - copies the string pointed to by src
+ *_strcpy - copies the string pointed to by src
  *to the buffer pointed to by dest.
  *@dest: pointer to buffer
  *@src: pointer to string
