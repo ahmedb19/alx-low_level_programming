@@ -1,6 +1,4 @@
-#include "function_pointers"
-#include <stdlib.h>
-#include <stdio.h>
+#include "function_pointers.h"
 
 /**
  *main - prints the opcodes of its own main function
