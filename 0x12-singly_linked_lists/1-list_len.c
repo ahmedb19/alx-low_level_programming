@@ -1,8 +1,8 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  *list_len - returns the number of elements in a linked list_t list.
- *@h: List
+ *@h: Ptr to 1st node
  *
  *Return: number of elements
  */
